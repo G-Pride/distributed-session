@@ -11,10 +11,12 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Autowired
     private LoginIntercepter loginIntercepter;
 
+    //addPathPatterns 拦截的请求
+    //excludePathPatterns 不拦截的请求
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginIntercepter)
-                .addPathPatterns("/user/address")  //  /user/**
+                .addPathPatterns("/user/uid")  //  /user/**
                 .addPathPatterns("/user/infoWithJwt");
 
 //        registry.addInterceptor(loginIntercepter)

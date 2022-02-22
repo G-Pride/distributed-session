@@ -74,7 +74,7 @@ public class UserController {
     }
 
     //获取地址, token -> id
-    @GetMapping("/address")
+    @GetMapping("/uid")
     public Integer address(@RequestAttribute Integer uid) {
         return uid;
     }
