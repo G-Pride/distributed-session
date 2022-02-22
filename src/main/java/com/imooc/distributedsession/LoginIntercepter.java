@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class LoginIntercepter extends HandlerInterceptorAdapter {
 
-    public static final String JWT_KEY = "imooc";
+    public static final String JWT_KEY = "jihoo";
     public static final String JWT_TOKEN = "token";
     public static final String UID = "uid";
     public static final String LOGIN_USER = "login_user";
